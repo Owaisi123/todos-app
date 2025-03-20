@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f4 50%, #d1e8ff 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; 
+    max-width: 400px; 
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em; 
+}
+
+h1 i {
+    margin-left: 5px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+.add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px; 
+    height: 35px; 
+    background-color: #28a745;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+.add-button i {
+    font-size: 16px; 
+}
+
+.task-container {
+    max-height: 200px; 
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 8px; 
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.task-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.task-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+li button {
+    background: #dc3545;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px; 
+}
+
+li button:hover {
+    background: #c82333;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.task-count {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.clear-button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 12px; 
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.clear-button:hover {
+    background-color: #c82333;
+}
+
+.clear-button i {
+    margin-right: 5px;
+}
+
+.toggle-icon {
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.toggle-icon:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .add-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .add-button i {
+        font-size: 18px;
+    }
+
+    li button {
+        padding: 5px 10px;
+    }
+
+    .clear-button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    input[type="text"] {
+        padding: 6px; 
+        font-size: 0.8em;
+    }
+
+    .add-button {
+        width: 30px; 
+        height: 30px;
+    }
+
+    .add-button i {
+        font-size: 14px; 
+    }
+
+    li {
+        padding: 6px; 
+    }
+
+    li button {
+        padding: 4px 8px; 
+    }
+
+    .clear-button {
+        padding: 6px 10px; 
+    }
+
+    .toggle-icon {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.1em; 
+    }
+
+    input[type="text"] {
+        padding: 5px; 
+        font-size: 0.7em; 
+    }
+
+    .add-button {
+        width: 28px; 
+        height: 28px; 
+    }
+
+    .add-button i {
+        font-size: 12px; 
+    }
+
+    li {
+        padding: 5px; 
+    }
+
+    li button {
+        padding: 3px 6px; 
+    }
+
+    .clear-button {
+        padding: 5px 8px; 
+    }
+
+    .toggle-icon {
+        font-size: 18px; 
+    }
+}
